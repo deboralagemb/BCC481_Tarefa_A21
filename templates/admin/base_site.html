@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"charset="UTF-8">
+    <title>Admin</title>
+  </head>
+  <body>
+		{% extends "admin/base.html" %}
+
+		{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+		{% block branding %}
+		<h1 id="site-name"><a href="{% url 'admin:index' %}">Polls Administration</a></h1>
+		{% endblock %}
+
+		{% block nav-global %}{% endblock %}
+  </body>
+</html>
+
+
+
